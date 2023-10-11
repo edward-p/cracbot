@@ -1,0 +1,11 @@
+[Unit]
+Description=cracbot
+Documentation=https://github.com/edward-p/cracbot
+After=network.target
+
+[Service]
+ExecStart=%h/.local/bin/cracbot
+EnvironmentFile=%E/cracbot.conf
+
+[Install]
+WantedBy=default.target
